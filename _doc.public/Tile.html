@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Command.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Chess_board" rel="Chapter" href="Chess_board.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="Tile" rel="Chapter" href="Tile.html"><title>Tile</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Command.html" title="Command">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_Tile.html">Tile</a></h1>
+
+<pre><span id="MODULETile"><span class="keyword">module</span> Tile</span>: <code class="code">sig</code> <a href="Tile.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>Representation of the tiles and pieces on a chessboard</p>
+
+<p>This module represents the state of each tile on the chessboard:
+    whether there is a piece on it and if so, what kind, the colors of
+    the pieces and a link to an img that that tile type.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><span id="TYPEtile"><span class="keyword">type</span> <code class="type"></code>tile</span> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>Abstract type for the tiles on a chessboard</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEp"><span class="keyword">type</span> <code class="type"></code>p</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTp.Empty"><span class="constructor">Empty</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTp.Rook"><span class="constructor">Rook</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTp.Bishop"><span class="constructor">Bishop</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTp.Knight"><span class="constructor">Knight</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTp.Pawn"><span class="constructor">Pawn</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTp.Queen"><span class="constructor">Queen</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTp.King"><span class="constructor">King</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p>Types of pieces on a tile</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEc"><span class="keyword">type</span> <code class="type"></code>c</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTc.None"><span class="constructor">None</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTc.White"><span class="constructor">White</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTc.Black"><span class="constructor">Black</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p>Color of the piece on a tile</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEimg"><span class="keyword">type</span> <code class="type"></code>img</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTimg.Image"><span class="constructor">Image</span></span> <span class="keyword">of</span> <code class="type">string</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTimg.No"><span class="constructor">No</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p>img for a piece on a tile</p>
+</div>
+</div>
+
+
+<pre><span id="VALpoint_value"><span class="keyword">val</span> point_value</span> : <code class="type"><a href="Tile.html#TYPEtile">tile</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">point_value t</code> represents the point value of t.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_piece"><span class="keyword">val</span> print_piece</span> : <code class="type"><a href="Tile.html#TYPEp">p</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">print_piece p</code> prints a string representation of the piece p.</p>
+</div>
+</div>
+
+<pre><span id="VALget_piece"><span class="keyword">val</span> get_piece</span> : <code class="type"><a href="Tile.html#TYPEtile">tile</a> -> <a href="Tile.html#TYPEp">p</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_piece t</code> returns the piece on tile t.</p>
+</div>
+</div>
+
+<pre><span id="VALget_color"><span class="keyword">val</span> get_color</span> : <code class="type"><a href="Tile.html#TYPEtile">tile</a> -> <a href="Tile.html#TYPEc">c</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_color t</code> returns the color on tile t.</p>
+</div>
+</div>
+
+<pre><span id="VALget_img"><span class="keyword">val</span> get_img</span> : <code class="type"><a href="Tile.html#TYPEtile">tile</a> -> <a href="Tile.html#TYPEimg">img</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_img t</code> returns the image of tile t.</p>
+</div>
+</div>
+
+<pre><span id="VALempty_tile"><span class="keyword">val</span> empty_tile</span> : <code class="type"><a href="Tile.html#TYPEtile">tile</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">empty_tile</code> is the empty tile.</p>
+</div>
+</div>
+
+<pre><span id="VALpawn"><span class="keyword">val</span> pawn</span> : <code class="type"><a href="Tile.html#TYPEtile">tile</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">pawn</code> is the pawn tile.</p>
+</div>
+</div>
+
+<pre><span id="VALparse_piece"><span class="keyword">val</span> parse_piece</span> : <code class="type">string -> int -> int -> <a href="Tile.html#TYPEtile">tile</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>parse_piece s x y returns the tile with corresponding piece, color,
+    img, of the string s.</p>
+</div>
+</div>
+</body></html>

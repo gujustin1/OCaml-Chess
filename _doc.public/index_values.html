@@ -1,0 +1,188 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Chess_board" rel="Chapter" href="Chess_board.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="Tile" rel="Chapter" href="Tile.html"><title>Index of values</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Index of values</h1>
+<table>
+<tr><td align="left"><div>C</div></td></tr>
+<tr><td><a href="Chess_board.html#VALcheck_validity">check_validity</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p><code class="code">check_validity b x y x2 y2 c</code> is <code class="code">true</code> iff moving (x,y) to (x2,y2)
+    is a valid move in the state of the game.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>E</div></td></tr>
+<tr><td><a href="Tile.html#VALempty_tile">empty_tile</a> [<a href="Tile.html">Tile</a>]</td>
+<td><div class="info">
+<p><code class="code">empty_tile</code> is the empty tile.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>G</div></td></tr>
+<tr><td><a href="Chess_board.html#VALget_black_score">get_black_score</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p><code class="code">get_black_score</code> is blacks's score.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Chess_board.html#VALget_captured_black">get_captured_black</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p><code class="code">get_captured_white</code> is a list of the captured black pieces.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Chess_board.html#VALget_captured_white">get_captured_white</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p><code class="code">get_captured_white</code> is a list of the captured white pieces.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Tile.html#VALget_color">get_color</a> [<a href="Tile.html">Tile</a>]</td>
+<td><div class="info">
+<p><code class="code">get_color t</code> returns the color on tile t.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Tile.html#VALget_img">get_img</a> [<a href="Tile.html">Tile</a>]</td>
+<td><div class="info">
+<p><code class="code">get_img t</code> returns the image of tile t.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Tile.html#VALget_piece">get_piece</a> [<a href="Tile.html">Tile</a>]</td>
+<td><div class="info">
+<p><code class="code">get_piece t</code> returns the piece on tile t.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Chess_board.html#VALget_white_score">get_white_score</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p><code class="code">get_white_score</code> is white's score.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>I</div></td></tr>
+<tr><td><a href="Chess_board.html#VALin_check">in_check</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p><code class="code">in_check c</code> returns whether the c colored king is in check.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Chess_board.html#VALinit">init</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p><code class="code">init</code> is the empty board.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Chess_board.html#VALinitialize">initialize</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p><code class="code">initialize b s 0</code> turns the string representation, s, of the board
+    into a board of tiles, b.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Chess_board.html#VALis_checkmate">is_checkmate</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p><code class="code">is_checkmate b</code> returns <code class="code">true</code> if a king is in checkmate, and
+    <code class="code">false</code> otherwise.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>M</div></td></tr>
+<tr><td><a href="Chess_board.html#VALmove_piece">move_piece</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p><code class="code">move_piece b x1 y1 x2 y2</code> moves the piece on b.(x1).(y1) to
+    b.(x2).(y2).</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>P</div></td></tr>
+<tr><td><a href="Command.html#VALparse">parse</a> [<a href="Command.html">Command</a>]</td>
+<td><div class="info">
+<p><code class="code">parse s</code> returns s as a command</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Tile.html#VALparse_piece">parse_piece</a> [<a href="Tile.html">Tile</a>]</td>
+<td><div class="info">
+<p>parse_piece s x y returns the tile with corresponding piece, color,
+    img, of the string s.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Tile.html#VALpawn">pawn</a> [<a href="Tile.html">Tile</a>]</td>
+<td><div class="info">
+<p><code class="code">pawn</code> is the pawn tile.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Tile.html#VALpoint_value">point_value</a> [<a href="Tile.html">Tile</a>]</td>
+<td><div class="info">
+<p><code class="code">point_value t</code> represents the point value of t.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Chess_board.html#VALpossible_moves">possible_moves</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p><code class="code">possible_moves x y b</code> is a set-like list of all the tiles that a
+    piece at position (x,y) can move to.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Tile.html#VALprint_piece">print_piece</a> [<a href="Tile.html">Tile</a>]</td>
+<td><div class="info">
+<p><code class="code">print_piece p</code> prints a string representation of the piece p.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>S</div></td></tr>
+<tr><td><a href="Chess_board.html#VALstarterboard">starterboard</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p><code class="code">starterboard</code> is the initial board state of a chess game as a
+    string.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Chess_board.html#VALstring_to_lists">string_to_lists</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p><code class="code">string_to_lists s</code> is a string list list representation of s, where
+    each string list is created by splitting on character '/' in s.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>T</div></td></tr>
+<tr><td><a href="Chess_board.html#VALtester_can_block">tester_can_block</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p>Used to print in the text game, helps debug</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Chess_board.html#VALtester_get_king_moves">tester_get_king_moves</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p>Used to print in the text game, helps debug</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Chess_board.html#VALtester_lst_attackers">tester_lst_attackers</a> [<a href="Chess_board.html">Chess_board</a>]</td>
+<td><div class="info">
+<p>Used to print in the text game, helps debug</p>
+
+</div>
+</td></tr>
+</table>
+</body>
+</html>
